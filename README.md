@@ -1,3 +1,3 @@
 # pmoa_tts
 
-Placeholder for PMOA TTS
+[Pre-print](https://arxiv.org/abs/2504.10340)
