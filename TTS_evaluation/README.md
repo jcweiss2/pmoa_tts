@@ -1,4 +1,4 @@
-### To run evaluation
+### Comparing LLM annotations with manual gold standard - event matching, concordance and time discrepancy. 
 
 - Set up environment (use conda to set up a python and R environment).
 
