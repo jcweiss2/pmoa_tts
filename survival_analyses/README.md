@@ -8,7 +8,9 @@ For this task, we evaluate models at predefined cut-off times -- specifically at
 A survival model is trained to predict the probability of survival over time beyond each cut-off. 
 We evaluate performance using the time-dependent concordance index to assess how well the predicted survival times align with actual outcomes.
 
-To evaluate the prognostic value of textual information encoded in large language models (LLMs), we adopt a two-stage framework: (1) extraction of fixed-dimensional sequence embeddings from various pre-trained LLMs, and (2) downstream survival modeling using these embeddings as covariates.
+To evaluate the prognostic value of textual information encoded in large language models (LLMs), we adopt a two-stage framework: 
+- (1) extraction of fixed-dimensional sequence embeddings from various pre-trained LLMs
+- (2) downstream survival modeling using these embeddings as covariates.
 
 ## Embedding Extraction
 
