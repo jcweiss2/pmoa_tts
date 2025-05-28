@@ -70,6 +70,21 @@ Each data point includes:
 
 For more details, visit the [Hugging Face dataset page](https://huggingface.co/datasets/snoroozi/pmoa-tts).
 
+## 📜 License
+
+The dataset is derived from publicly available PubMed Open Access case reports.  
+All annotations and metadata are released under the **CC BY-NC-SA 4.0** license.
+
+## 🧩 Coming Soon
+
+- DeepSeek-R1 annotations for the full 125k dataset  
+  *(Note: DeepSeek-R1 annotations for the 25k subset are already available)*
+
+## 🙏 Acknowledgments
+
+This dataset was generated as part of research at the **National Library of Medicine (NLM)** at the **National Institutes of Health (NIH)** and **Carnegie Mellon University (CMU)**.  
+We thank the **PubMed Open Access initiative** and the authors of the case reports that made this work possible.
+
 ## 📄 Citation
 
 If you use PMOA-TTS in your research, please cite our preprints:
