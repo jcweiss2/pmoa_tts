@@ -173,8 +173,8 @@ def compute_embeddings(texts, model, tokenizer, max_length, device):
 
 def main():
     args = parse_args()
-    tts_folder_path = os.path.join(args.data_folder, 'L33_sampled_25k_timeord')
-    event_time_folder_path = os.path.join(args.data_folder, 'L33_llm_death_phe_output/clean/')
+    tts_folder_path = os.path.join(args.data_folder, 'L33_sampled_25k_timeord') # Folder with CSV files containing time-ordered textual time series
+    event_time_folder_path = os.path.join(args.data_folder, 'L33_llm_death_phe_output/clean/') # Folder with death phenotype labels. 
 
     #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
