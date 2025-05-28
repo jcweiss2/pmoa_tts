@@ -52,4 +52,33 @@ from datasets import load_dataset
 dataset = load_dataset("snoroozi/pmoa-tts")
 ```
 
+## 📄 Dataset Details
+
+- **Number of Records:** Approximately 174,000 case reports  
+- **Data Format:** Parquet files, compatible with Hugging Face Datasets and pandas  
+- **Languages:** English  
+- **License:** CC BY-NC-SA 4.0  
+- **Tags:** clinical, time-series, biomedical, text  
+- **Tasks Supported:** Text Classification, Time Series Forecasting  
+
+Each data point includes:
+
+- **Textual Time Series:** A sequence of timestamped clinical events  
+- **Demographics:** Age, sex, and ethnicity (when available)  
+- **Diagnoses:** Extracted diagnoses from the case report  
+- **Death Information:** Observed time and death event indicator  
+
+For more details, visit the [Hugging Face dataset page](https://huggingface.co/datasets/snoroozi/pmoa-tts).
+
+## 📄 Citation
+
+If you use PMOA-TTS in your research, please cite our preprints:
+
+```bibtex
+@article{noroozizadeh2025pmoa,
+  title={PMOA-TTS: Introducing the PubMed Open Access Textual Times Series Corpus},
+  author={Noroozizadeh, Shahriar and Kumar, Sayantan and Chen, George H. and Weiss, Jeremy C.},
+  journal={arXiv preprint arXiv:2505.20323},
+  year={2025}
+}
    
