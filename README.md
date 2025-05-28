@@ -27,7 +27,6 @@ Each subdirectory contains its own `README.md` with detailed instructions and in
    bash
    git clone https://github.com/jcweiss2/pmoa_tts.git
    cd pmoa_tts
-   
    ```
 
 2. **Set up the environment:**
@@ -35,14 +34,14 @@ Each subdirectory contains its own `README.md` with detailed instructions and in
    Ensure you have Python 3.10 or higher installed. It's recommended to use a virtual environment.
 
    ```
-  conda create -n pmoa_tts python 3.10 
-  conda activate pmoa_tts 
-  conda install pandas scikit-learn numpy tensorboard -c conda-forge 
-  conda install pytorch torchvision torchaudio -c pytorch 
-  pip install transformers 
-  pip install argparse 
-  conda install jupyter -c conda-forge 
-  pip install sentencepiece
+   conda create -n pmoa_tts python 3.10 
+   conda activate pmoa_tts 
+   conda install pandas scikit-learn numpy tensorboard -c conda-forge 
+   conda install pytorch torchvision torchaudio -c pytorch 
+   pip install transformers 
+   pip install argparse 
+   conda install jupyter -c conda-forge 
+   pip install sentencepiece
    ```
 
 3. **Access the PMOA-TTS dataset**
