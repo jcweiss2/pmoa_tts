@@ -8,8 +8,8 @@ import pickle
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_folder', type=str, default="/data/CHARM-MIMIC/data/pmoa241217/Sayantan/")  # e.g., phe_deceased/sepsis10
-    parser.add_argument('--cache_dir', type=str, default="/data/kumars33/.cache/huggingface/hub/", help='Cache directory')
+    parser.add_argument('--data_folder', type=str, default="<Insert data directory>")  # e.g., phe_deceased/sepsis10
+    parser.add_argument('--cache_dir', type=str, default="<Insert cache directory>", help='Cache directory')
     parser.add_argument('--model_name', type=str, default='meta-llama/Llama-3.3-70B-Instruct')
     parser.add_argument('--batch_size', type=int, default=16)
     parser.add_argument('--max_length', type=int, default=512)
