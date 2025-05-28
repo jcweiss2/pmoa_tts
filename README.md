@@ -79,6 +79,12 @@ If you use PMOA-TTS in your research, please cite our preprints:
   title={PMOA-TTS: Introducing the PubMed Open Access Textual Times Series Corpus},
   author={Noroozizadeh, Shahriar and Kumar, Sayantan and Chen, George H. and Weiss, Jeremy C.},
   journal={arXiv preprint arXiv:2505.20323},
+  year={2025}}
+
+@article{noroozizadeh2025forecasting,
+  title={Forecasting from Clinical Textual Time Series: Adaptations of the Encoder and Decoder Language Model Families},
+  author={Noroozizadeh, Shahriar and Kumar, Sayantan and Weiss, Jeremy C},
+  journal={arXiv preprint arXiv:2504.10340},
   year={2025}
 }
    
