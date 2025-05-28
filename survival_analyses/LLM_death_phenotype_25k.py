@@ -8,9 +8,9 @@ from tqdm import tqdm
 
 model_name = "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
 
-model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype = torch.bfloat16,  cache_dir="/data/CHARM-MIMIC/.cache/huggingface/hub/", device_map='auto', offload_folder="offload",  offload_state_dict=True) 
+model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype = torch.bfloat16,  cache_dir="<Insert cache directory>", device_map='auto', offload_folder="offload",  offload_state_dict=True) 
 
-tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir="/data/CHARM-MIMIC/.cache/huggingface/hub/")
+tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir="<Insert cache directory>")
 
 pipeline = transformers.pipeline("text-generation", model=model, torch_dtype=torch.bfloat16, eos_token_id=tokenizer.eos_token_id, tokenizer=tokenizer, device_map="auto")
 
@@ -56,14 +56,14 @@ suffix31 = r'''
 
 '''
 
-txtfiles_dir = '/data/CHARM-MIMIC/data/pmoa241217/Sayantan/sampled_25k_body/clean/'
+txtfiles_dir = '<Folder with text files containing the 25k case reports>'
 
-annotations_dir = '/data/CHARM-MIMIC/data/pmoa241217/Sayantan/sampled_25k_timeord/'
+annotations_dir = '<Folder with CSV files containing 25k time-ordered textual time series>'
 
 case_filenames = [f for f in os.listdir(txtfiles_dir) if f.endswith(".txt")]
 ann_filenames = [f for f in os.listdir(annotations_dir) if f.endswith(".csv")]
 
-out_dir = '/data/CHARM-MIMIC/data/pmoa241217/Sayantan/temp_llm_death_phe_output/'
+out_dir = '<Output directory for storing death phenotype labels>'
 
 
 if out_dir == txtfiles_dir:
