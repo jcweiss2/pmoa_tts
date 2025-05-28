@@ -78,7 +78,7 @@ All annotations and metadata are released under the **CC BY-NC-SA 4.0** license.
 ## 🧩 Coming Soon
 
 - DeepSeek-R1 annotations for the full 125k dataset  
-  *(Note: DeepSeek-R1 annotations for the 25k subset are already available)*
+  *(Note: DeepSeek-R1 annotations for the 25k subset are already available). Check for [Hugging Face dataset page](https://huggingface.co/datasets/snoroozi/pmoa-tts)*
 
 ## 🙏 Acknowledgments
 
