@@ -25,4 +25,7 @@ In the second stage, these embedding vectors are used as input covariates to thr
 
 ## 📁 Folder Structure
 ```
+📄 embeddings_survival_analysis_BERT.py     # python script to extract embeddings for encoder-based families
+📄 embeddings_survival_analysis_llm.py      # python script to extract embeddings for decoder-based families
+📄 LLM_death_phenotypes_25k.py              # python script use LLMs (DeepSeek R1) to extract the death phenotype labels for a sample of 25k patients
 ```
