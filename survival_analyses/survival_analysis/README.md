@@ -1,4 +1,4 @@
-# Survival Analysis Module
+# Survival Experiments Module
 
 This folder contains scripts, utilities, and notebooks to perform survival analysis on embeddings derived from clinical text representations. The analysis evaluates various survival models across different experimental subsets using deep learning-based survival models.
 
