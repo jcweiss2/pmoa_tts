@@ -8,8 +8,8 @@ import pickle
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_folder', type=str, default="/data/CHARM-MIMIC/data/pmoa241217/Sayantan/")  # e.g., phe_deceased/sepsis10
-    parser.add_argument('--cache_dir', type=str, default="/data/kumars33/.cache/huggingface/hub/", help='Cache directory')
+    parser.add_argument('--data_folder', type=str, default="<Insert data directory>")  # e.g., phe_deceased/sepsis10
+    parser.add_argument('--cache_dir', type=str, default="<Insert cache directory>", help='Cache directory')
     parser.add_argument('--model_name', type=str, default='answerdotai/ModernBERT-base')
     parser.add_argument('--batch_size', type=int, default=16)
     parser.add_argument('--max_length', type=int, default=512)
@@ -167,8 +167,8 @@ def compute_embeddings(texts, model, tokenizer, max_length, device):
 
 def main():
     args = parse_args()
-    tts_folder_path = os.path.join(args.data_folder, 'sampled_25k_timeord')
-    event_time_folder_path = os.path.join(args.data_folder, 'temp_llm_death_phe_output/clean')
+    tts_folder_path = os.path.join(args.data_folder, 'sampled_25k_timeord')  ## folder with time-ordered CSV files with textual time-series
+    event_time_folder_path = os.path.join(args.data_folder, 'temp_llm_death_phe_output/clean') # folder with death phenotype labels. 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_name, cache_dir = args.cache_dir)
